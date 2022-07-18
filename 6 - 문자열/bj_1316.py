@@ -10,9 +10,7 @@ for i in range(n):
             count -= 1
             break
 
-        if word[j] in s:
-            continue
-        else:
+        if word[j] not in s:
             s.append(word[j])
 
 print(count)

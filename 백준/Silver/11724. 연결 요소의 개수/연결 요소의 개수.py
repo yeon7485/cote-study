@@ -19,9 +19,6 @@ for i in range(m):
     graph[x].append(y)
     graph[y].append(x)
 
-for g in graph:
-    g.sort()
-
 result = 1
 i = 1
 while True:

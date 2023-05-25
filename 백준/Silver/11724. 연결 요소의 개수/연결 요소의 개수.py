@@ -1,12 +1,12 @@
 import sys
 sys.setrecursionlimit(10000)
 
-def dfs(graph, v, visited):
+def dfs(v):
     visited[v] = True
 
     for i in graph[v]:
         if not visited[i]:
-            dfs(graph, i, visited)
+            dfs(i)
 
 n, m = map(int, sys.stdin.readline().split())
 
@@ -22,7 +22,7 @@ for i in range(m):
 result = 1
 i = 1
 while True:
-    dfs(graph, i, visited)
+    dfs(i)
     if False not in visited:
         break
     result += 1

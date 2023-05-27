@@ -4,14 +4,16 @@ import sys
 
 n, m = map(int, sys.stdin.readline().split())
 
-pokemon = [0] * n
+pokemon = {}
 
-for i in range(n):
-    pokemon[i] = sys.stdin.readline()
+for i in range(1, n+1):
+    p = sys.stdin.readline().rstrip()
+    pokemon[i] = p
+    pokemon[p] = i
 
 for i in range(m):
-    find = sys.stdin.readline()
-    if 49 <= ord(find[0]) and ord(find[0]) <= 57:
-        print(pokemon[int(find) - 1])
+    find = sys.stdin.readline().rstrip()
+    if find.isdigit():
+        print(pokemon[int(find)])
     else:
-        print(pokemon.index(find) + 1)
+        print(pokemon[find])

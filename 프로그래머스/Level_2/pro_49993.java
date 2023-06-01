@@ -1,6 +1,6 @@
 // Lv.2 - 스킬트리
 
-public class SkillTree {
+public class pro_49993 {
     public int solution(String skill, String[] skill_trees){
         int answer = 0;
         String[] st = new String[skill_trees.length];
@@ -40,7 +40,7 @@ public class SkillTree {
     }
 
     public static void main(String[] args){
-        SkillTree st = new SkillTree();
+        pro_49993 st = new pro_49993();
         
         String skill1 = "CBD";
         String[] skill_trees1 = {"BACDE", "CBADF", "AECB", "BDA"};

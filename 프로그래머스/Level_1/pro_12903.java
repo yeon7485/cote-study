@@ -1,6 +1,6 @@
 // Lv.1 - 가운데 글자 가져오기
 
-public class MidWord{
+public class pro_12903{
     public String solution(String s) {
         String answer = "";
         int mid = s.length()/2;
@@ -15,7 +15,7 @@ public class MidWord{
 
 
     public static void main(String[] args) {
-        MidWord mw = new MidWord();
+        pro_12903 mw = new pro_12903();
         System.out.println(mw.solution("abcde"));
         System.out.println(mw.solution("qwer"));
     }

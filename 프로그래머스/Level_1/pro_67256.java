@@ -1,6 +1,6 @@
 // Lv.1 - 키패드 누르기
 
-public class PressKeypad {
+public class pro_67256 {
     public String solution(int[] numbers, String hand) {
         String answer = "";
         String h = "";
@@ -73,7 +73,7 @@ public class PressKeypad {
     }
 
     public static void main(String[] args) {
-        PressKeypad pk = new PressKeypad();
+        pro_67256 pk = new pro_67256();
         int[] n1 = { 1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5 };
         int[] n2 = { 7, 0, 8, 2, 8, 3, 1, 5, 7, 6, 2 };
         int[] n3 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };

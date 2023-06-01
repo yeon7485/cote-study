@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-public class X_Number{
+public class pro_12954{
     public long[] solution(long x, int n){
         long[] answer = {};
         answer = new long[n];
@@ -14,7 +14,7 @@ public class X_Number{
     }
 
     public static void main(String[] args){
-        X_Number x = new X_Number();
+        pro_12954 x = new pro_12954();
         System.out.println(Arrays.toString(x.solution(3, 5)));
         System.out.println(Arrays.toString(x.solution(4, 3)));
         System.out.println(Arrays.toString(x.solution(-4, 2)));

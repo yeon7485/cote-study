@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-public class Kth_Number {
+public class pro_42728 {
     public int[] solution(int[] array, int[][] commands) {
         int[] answer = new int[commands.length];
         int n = 0;
@@ -20,7 +20,7 @@ public class Kth_Number {
     }
 
     public static void main(String[] args) {
-        Kth_Number kn = new Kth_Number();
+        pro_42728 kn = new pro_42728();
         int[] array = {1, 5, 2, 6, 3, 7, 4};
         int[][] commands = {   
             {2, 5, 3},

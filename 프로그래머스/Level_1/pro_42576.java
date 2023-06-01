@@ -3,7 +3,7 @@ import java.util.HashMap;
 
 // Lv.1 - 완주하지 못한 선수
 
-public class NotFinishPlayer {
+public class pro_42576 {
     public String solution(String[] participant, String[] completion) {
         String answer = "";
 
@@ -36,7 +36,7 @@ public class NotFinishPlayer {
     }
 
     public static void main(String[] args) {
-        NotFinishPlayer nfp = new NotFinishPlayer();
+        pro_42576 nfp = new pro_42576();
 
         String[] p1 = {"leo", "kiki", "eden"};
         String[] c1 = {"eden", "kiki"};

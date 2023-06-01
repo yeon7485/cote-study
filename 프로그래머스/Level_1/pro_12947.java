@@ -1,6 +1,6 @@
 // Lv.1 - 하샤드 수
 
-public class HarshadNumber{
+public class pro_12947{
     public boolean solution(int x) {
         boolean answer = true;
         int num = x;
@@ -14,7 +14,7 @@ public class HarshadNumber{
     }
 
     public static void main(String[] args) {
-        HarshadNumber h = new HarshadNumber();
+        pro_12947 h = new pro_12947();
         System.out.println(h.solution(10));
         System.out.println(h.solution(12));
         System.out.println(h.solution(11));

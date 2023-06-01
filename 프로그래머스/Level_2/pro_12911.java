@@ -1,6 +1,6 @@
 // Lv.2 - 다음 큰 숫자
 
-public class NextBigNumber {
+public class pro_12911 {
     public int solution(int n) {
         int answer = n + 1;
         while(true){
@@ -22,7 +22,7 @@ public class NextBigNumber {
     }
 
     public static void main(String[] args) {
-        NextBigNumber n = new NextBigNumber();
+        pro_12911 n = new pro_12911();
         System.out.println(n.solution(78));
         System.out.println(n.solution(15));
     }

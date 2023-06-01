@@ -1,7 +1,7 @@
 // Lv.2 - 전화번호 목록
 import java.util.*;
 
-public class PhoneNumList {
+public class pro_42577 {
     public boolean solution(String[] phone_book) {
         HashMap<String, Integer> map = new HashMap<>();
         for(int i = 0; i < phone_book.length; i++){
@@ -18,7 +18,7 @@ public class PhoneNumList {
         return true;
     }
     public static void main(String[] args) {
-        PhoneNumList pl = new PhoneNumList();
+        pro_42577 pl = new pro_42577();
         String[] arr1 = {"119", "97674223", "1195524421"};
         String[] arr2 = {"123","456","789"};
         String[] arr3 = {"12","123","1235","567","88"};

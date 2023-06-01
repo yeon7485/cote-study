@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class GymSuit {
+public class pro_42862 {
     public int solution(int n, int[] lost, int[] reserve) {
         int answer = 0;
         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
@@ -40,7 +40,7 @@ public class GymSuit {
 
 
     public static void main(String[] args){
-        GymSuit gs = new GymSuit();
+        pro_42862 gs = new pro_42862();
 
         int[] lost1 = {2, 4};
         int[] reserve1 = {1, 3, 5};

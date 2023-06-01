@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class SquareStar {
+public class pro_12969 {
     public static void main(String args[]) {
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();

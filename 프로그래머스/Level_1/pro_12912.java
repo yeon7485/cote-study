@@ -1,6 +1,6 @@
 // Lv.1 - 두 정수 사이의 합
 
-public class BetweenSum {
+public class pro_12912 {
     public long solution(int a, int b) {
         long answer = 0;
 
@@ -12,7 +12,7 @@ public class BetweenSum {
     }
 
     public static void main(String[] args) {
-        BetweenSum bs = new BetweenSum();
+        pro_12912 bs = new pro_12912();
         System.out.println(bs.solution(3, 5));
         System.out.println(bs.solution(3, 3));
         System.out.println(bs.solution(5, 3));

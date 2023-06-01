@@ -2,7 +2,7 @@ import java.util.*;
 
 // Lv.2 - 가장 큰 수
 
-public class BiggestNumber {
+public class pro_42746 {
     public String solution(int[] numbers) {
         String answer = "";
         String[] num = new String[numbers.length];
@@ -26,7 +26,7 @@ public class BiggestNumber {
         return answer;
     }
     public static void main(String[] args) {
-        BiggestNumber bn = new BiggestNumber();
+        pro_42746 bn = new pro_42746();
         int[] arr1 = {6, 10, 2};
         int[] arr2 = {3, 30, 34, 5, 9};
         int[] arr3 = {23, 232, 21, 212};

@@ -1,6 +1,6 @@
 // Lv.2 - 문자열 압축
 
-public class StringCompression {
+public class pro_60057 {
     public int solution(String s) {
         int answer = s.length();
         int n = 0; // 반복 횟수 
@@ -49,7 +49,7 @@ public class StringCompression {
 
 
     public static void main(String[] args) {
-        StringCompression sc = new StringCompression();
+        pro_60057 sc = new pro_60057();
 
         System.out.println(sc.solution("aabbaccc"));
         System.out.println(sc.solution("ababcdcdababcdcd"));

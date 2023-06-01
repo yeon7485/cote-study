@@ -1,6 +1,6 @@
 // Lv.1 - 2016년
 
-public class Year2016 {
+public class pro_12901 {
     public String solution(int a, int b) {
         String answer = "";
         int days = b;
@@ -14,7 +14,7 @@ public class Year2016 {
         return answer;
     }
     public static void main(String[] args) {
-        Year2016 y = new Year2016();
+        pro_12901 y = new pro_12901();
         System.out.println(y.solution(5, 24));
     }
 }

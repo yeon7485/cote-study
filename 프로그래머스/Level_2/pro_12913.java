@@ -1,6 +1,6 @@
 // Lv.2 - 땅따먹기 
 
-public class EatLand {
+public class pro_12913 {
     int solution(int[][] land) {
         int answer = 0;
         int max = 0;
@@ -34,7 +34,7 @@ public class EatLand {
     }
 
     public static void main(String[] args){
-        EatLand el = new EatLand();
+        pro_12913 el = new pro_12913();
         int[][] arr1 = new int[][]{{1, 2, 3, 5}, {5, 6, 7, 8}, {4, 3, 2, 1}};
         int[][] arr2 = new int[][]{{1, 2, 3, 5}, {5, 6, 7, 100}, {4, 3, 2, 1}};
         System.out.println((el.solution(arr1)));

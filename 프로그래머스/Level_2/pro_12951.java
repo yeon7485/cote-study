@@ -1,6 +1,6 @@
 // LV.2 - JadenCase 문자열 만들기
 
-public class JadenCase{
+public class pro_12951{
     public String solution(String s) {
         String answer = "";
         int idx = 0;
@@ -24,7 +24,7 @@ public class JadenCase{
     }
 
     public static void main(String[] args) {
-        JadenCase j = new JadenCase();
+        pro_12951 j = new pro_12951();
         System.out.println(j.solution("3people unFollowed me"));
         System.out.println(j.solution("for the last week"));
         System.out.println(j.solution("a   bcd  hello"));

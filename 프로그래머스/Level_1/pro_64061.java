@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class ClawMachineGame {
+public class pro_64061 {
     public int solution(int[][] board, int[] moves) {
         int answer = 0;
         int m = 0;
@@ -28,7 +28,7 @@ public class ClawMachineGame {
     }
     
     public static void main(String[] args) {
-        ClawMachineGame cmg = new ClawMachineGame();
+        pro_64061 cmg = new pro_64061();
         int[][] board = {
             {0, 0, 0, 0, 0}, 
             {0, 0, 1, 0, 3}, 

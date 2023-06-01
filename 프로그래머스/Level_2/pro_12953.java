@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-public class LeastCommonMultiple {
+public class pro_12953 {
     public int solution(int[] arr) {
         int answer = 0;
         boolean check = true;
@@ -32,7 +32,7 @@ public class LeastCommonMultiple {
     }
 
     public static void main(String[] args) {
-        LeastCommonMultiple ncm = new LeastCommonMultiple();
+        pro_12953 ncm = new pro_12953();
         int[] arr1 = { 2, 6, 8, 14 };
         int[] arr2 = { 1, 2, 3 };
 

@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-public class SumMatrix {
+public class pro_12950 {
     public int[][] solution(int[][] arr1, int[][] arr2) {
         int[][] answer = {};
         answer = new int[arr1.length][arr1[0].length];
@@ -16,7 +16,7 @@ public class SumMatrix {
     }
 
     public static void main(String[] args){
-        SumMatrix sm = new SumMatrix();
+        pro_12950 sm = new pro_12950();
         int[][] arr1 = new int[][]{{1, 2}, {2, 3}};
         int[][] arr2 = new int[][]{{3, 4}, {5, 6}};
         

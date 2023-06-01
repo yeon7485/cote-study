@@ -1,6 +1,6 @@
 // Lv.1 - 이상한 문자 만들기
 
-public class StrangeString {
+public class pro_12930 {
     public String solution(String s) {
         String answer = "";
         int idx = 0;
@@ -20,7 +20,7 @@ public class StrangeString {
     }
 
     public static void main(String[] args) {
-        StrangeString s = new StrangeString();
+        pro_12930 s = new pro_12930();
         System.out.println(s.solution("try  hello  world"));
     }
 }

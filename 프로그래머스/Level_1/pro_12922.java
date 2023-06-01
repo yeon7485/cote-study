@@ -1,6 +1,6 @@
 // Lv.1 - 수박수박수박수박수박수?
 
-public class Watermelon {
+public class pro_12922 {
     String solution(int n) {
         String answer = "";
         for(int i = 0; i < n/2; i++){
@@ -13,7 +13,7 @@ public class Watermelon {
     }
 
     public static void main(String[] args){
-        Watermelon w = new Watermelon();
+        pro_12922 w = new pro_12922();
 
         System.out.println(w.solution(3));
         System.out.println(w.solution(8));

@@ -2,7 +2,7 @@
 
 import java.util.HashSet;
 
-public class Phonekatmon {
+public class pro_1845 {
     int solution(int[] nums) {
         int answer = nums.length / 2;
         HashSet<Integer> set = new HashSet<Integer>();
@@ -19,7 +19,7 @@ public class Phonekatmon {
     }
 
     public static void main(String[] args){
-        Phonekatmon p = new Phonekatmon();
+        pro_1845 p = new pro_1845();
         int[] arr1 = {3, 1, 2, 3};
         int[] arr2 = {3, 3, 3, 2, 2, 4};
         int[] arr3 = {3, 3, 3, 2, 2, 2};

@@ -1,6 +1,6 @@
 // LV.1 - 평균 구하기
 
-public class Average {
+public class pro_12944 {
     public double solution(int[] arr) {
         double answer = 0;
         for(int a: arr){
@@ -10,7 +10,7 @@ public class Average {
         return answer;
     }
     public static void main(String[] args) {
-        Average a = new Average();
+        pro_12944 a = new pro_12944();
         int[] arr1 = {1, 2, 3, 4};
         int[] arr2 = {5, 5};
         System.out.println(a.solution(arr1));

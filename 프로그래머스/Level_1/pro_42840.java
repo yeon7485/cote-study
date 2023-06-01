@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-public class MockExam {
+public class pro_42840 {
     public int[] solution(int[] answers) {
         int[] answer = {};
         int[] stu1 = {1, 2, 3, 4, 5};
@@ -38,7 +38,7 @@ public class MockExam {
     }
 
     public static void main(String[] args){
-        MockExam me = new MockExam();
+        pro_42840 me = new pro_42840();
         int[] arr1 = {1, 2, 3, 4, 5};
         int[] arr2 = {1, 3, 2, 4, 2};
 

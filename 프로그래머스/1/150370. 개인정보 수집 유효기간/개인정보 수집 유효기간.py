@@ -3,37 +3,32 @@ def solution(today, terms, privacies):
     term = {}
     
     for t in terms:
-        ts = t.split()
-        term[ts[0]] = int(ts[1])
-    
-    for i, p in enumerate(privacies):
-        date, x = p.split()
-        year = int(date[0:4])
-        month = int(date[5:7]) + term[x]
-        day = int(date[8:]) - 1
+        a, b = t.split()
+        term[a] = int(b)
         
-        if day == 0:
-            month -= 1
-            day = 28
+    for i, p in enumerate(privacies):
+        a, b = p.split()
+        year, month, date = list(map(int, a.split('.')))
+        month += term[b]
+        
         if month > 12:
             if month % 12 == 0:
-                year += (month // 12) - 1
+                year += month // 12 - 1
                 month = 12
             else:
                 year += month // 12
                 month %= 12
-
-        print(year, month, day)
-        tdy = list(map(int, today.split('.')))
         
-        if tdy[0] > year:
-            answer.append(i+1)
+        t = list(map(int, today.split('.')))
+        
+        if t[0] < year:
             continue
-        elif tdy[1] > month and tdy[0] == year:
-            answer.append(i+1)
+        if t[1] < month and t[0] == year:
             continue
-        elif tdy[2] > day and tdy[1] == month and tdy[0] == year:
-            answer.append(i+1)
+        if t[2] < date and t[1] == month and t[0] == year:
             continue
+            
+        answer.append(i+1)
+            
     
     return answer

@@ -39,9 +39,6 @@ for tm in tomato:
         break
     result = max(result, max(tm))
 
-if zero:
-    result = -1
-else:
-    result -= 1
+result = -1 if zero else result - 1
 
 print(result)

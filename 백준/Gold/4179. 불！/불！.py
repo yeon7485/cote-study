@@ -19,7 +19,6 @@ def fire_bfs():
 
 def j_bfs():
     ret = 'IMPOSSIBLE'
-    e = []
     while jq:
         x, y = jq.popleft()
         if escape[x][y] == 0:
@@ -28,17 +27,12 @@ def j_bfs():
             nx = x + dx[i]
             ny = y + dy[i]
             if nx < 0 or nx >= r or ny < 0 or ny >= c:
-                e.append(escape[x][y])
-                continue
+                return escape[x][y]
             if maze[nx][ny] == '.' and escape[nx][ny] == 0:
                 if fire[nx][ny] > escape[x][y] + 1 or fire[nx][ny] == 0:
                     jq.append((nx, ny))
                     escape[nx][ny] = escape[x][y] + 1
-
-    if len(e) == 0:
-        return ret
-    else:
-        return min(e)
+    return ret
 
 
 r, c = map(int, input().split())

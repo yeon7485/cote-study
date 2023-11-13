@@ -29,7 +29,7 @@ def j_bfs():
             ny = y + dy[i]
             if nx < 0 or nx >= r or ny < 0 or ny >= c:
                 e.append(escape[x][y])
-                break
+                continue
             if maze[nx][ny] == '.' and escape[nx][ny] == 0:
                 if fire[nx][ny] > escape[x][y] + 1 or fire[nx][ny] == 0:
                     jq.append((nx, ny))

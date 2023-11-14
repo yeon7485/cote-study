@@ -2,10 +2,11 @@ from collections import deque
 
 
 def bfs(x, y):
+    queue = deque()
     queue.append((x, y))
+    visited[x][y] = True
     while queue:
         x, y = queue.popleft()
-        visited[x][y] = True
         for i in range(4):
             nx = x + dx[i]
             ny = y + dy[i]
@@ -26,7 +27,6 @@ for t in range(T):
     m, n, k = list(map(int, input().split()))
     graph = [[0 for _ in range(m)] for __ in range(n)]
     visited = [[False] * m for _ in range(n)]
-    queue = deque()
     point = []
     result = 0
 

@@ -1,7 +1,7 @@
 from collections import deque
 
 def bfs(v):
-    queue = deque([v])
+    queue.append(v)
     while queue:
         v = queue.popleft()
         if v == k:
@@ -11,6 +11,8 @@ def bfs(v):
                 queue.append(i)
                 visited[i] = visited[v] + 1
 
+
 n, k = map(int, input().split())
 visited = [0 for _ in range(100001)]
+queue = deque()
 print(bfs(n))

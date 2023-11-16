@@ -23,7 +23,7 @@ for i in range(n):
     graph.append(list(map(int, input().split())))
 
 
-maxHeight = 0
+height = []
 for i in range(1, 101):
     arr = copy.deepcopy(graph)
     result = 0
@@ -31,6 +31,6 @@ for i in range(1, 101):
         for y in range(n):
             if dfs(x, y, i) == True:
                 result += 1
-    maxHeight = max(maxHeight, result)
+    height.append(result)
 
-print(maxHeight)
+print(max(height))

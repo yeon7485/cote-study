@@ -1,44 +1,38 @@
-from collections import deque
+import sys
+
+sys.setrecursionlimit(10000)
 
 
-def bfs(x, y):
-    queue = deque()
-    queue.append((x, y))
-    visited[x][y] = True
-    while queue:
-        x, y = queue.popleft()
-        for i in range(4):
-            nx = x + dx[i]
-            ny = y + dy[i]
-            if nx < 0 or nx >= n or ny < 0 or ny >= m:
-                continue
-            if graph[nx][ny] == 1 and not visited[nx][ny]:
-                queue.append((nx, ny))
-                visited[nx][ny] = True
-    return True
+def dfs(x, y):
+    if x < 0 or x >= n or y < 0 or y >= m:
+        return False
+    if not visited[x][y] and ground[x][y] == 1:
+        visited[x][y] = True
+        for p in range(4):
+            nx = x + dx[p]
+            ny = y + dy[p]
+            dfs(nx, ny)
+        return True
+    return False
 
 
-T = int(input())
+TC = int(input())
 
-dx = [-1, 1, 0, 0]
-dy = [0, 0, -1, 1]
-
-for t in range(T):
-    m, n, k = list(map(int, input().split()))
-    graph = [[0 for _ in range(m)] for __ in range(n)]
+for t in range(TC):
+    m, n, k = map(int, input().split())
+    ground = [[0] * m for _ in range(n)]
     visited = [[False] * m for _ in range(n)]
-    point = []
+    dx = [-1, 1, 0, 0]
+    dy = [0, 0, -1, 1]
+
+    for i in range(k):
+        a, b = map(int, input().split())
+        ground[b][a] = 1
+
     result = 0
 
-    for _ in range(k):
-        a, b = map(int, input().split())
-        graph[b][a] = 1
-        point.append((b, a))
-
-    for p in point:
-        a, b = p
-        if not visited[a][b] and graph[a][b] == 1:
-            bfs(a, b)
-            result += 1
-
+    for i in range(m):
+        for j in range(n):
+            if dfs(j, i):
+                result += 1
     print(result)

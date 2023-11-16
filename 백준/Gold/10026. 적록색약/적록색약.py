@@ -18,12 +18,9 @@ def dfs(x, y, color):
 
 n = int(input())
 area = [list(input()) for _ in range(n)]
-RGB = ['R', 'G', 'B']
-RB = ['R', 'B']
-dx = [-1, 1, 0, 0]
-dy = [0, 0, -1, 1]
-rst1 = 0
-rst2 = 0
+RGB, RB = ['R', 'G', 'B'], ['R', 'B']
+dx, dy = [-1, 1, 0, 0], [0, 0, -1, 1]
+rst1, rst2 = 0, 0
 
 for c in RGB:
     visited = [[False] * n for _ in range(n)]
@@ -32,9 +29,9 @@ for c in RGB:
             if dfs(i, j, c):
                 rst1 += 1
 
-for i, ar in enumerate(area):
-    for j, a in enumerate(ar):
-        if a == 'G':
+for i in range(n):
+    for j in range(n):
+        if area[i][j] == 'G':
             area[i][j] = 'R'
 
 for c in RB:

@@ -1,7 +1,7 @@
 n = int(input())
 
 d = [0 for _ in range(n + 1)]
-graph = [0]
+graph = [0 for _ in range(n + 1)]
 for i in range(2, n + 1):
     d[i] = d[i - 1] + 1
     x = i - 1
@@ -12,13 +12,13 @@ for i in range(2, n + 1):
         d[i] = d[i // 2] + 1
         x = i // 2
 
-    graph.append(x)
+    graph[i] = x
 
 result = [n]
-while len(graph) > 1:
-    x = graph[-1]
+x = n
+while x > 1:
+    x = graph[x]
     result.append(x)
-    graph = graph[:x]
 
 print(d[n])
 print(*result)

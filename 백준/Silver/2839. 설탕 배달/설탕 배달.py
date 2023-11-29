@@ -1,5 +1,5 @@
 n = int(input())
-d = [5001] * (n + 5)
+d = [5001] * (n + 3)
 d[3] = d[5] = 1
 
 for i in range(6, n + 1):

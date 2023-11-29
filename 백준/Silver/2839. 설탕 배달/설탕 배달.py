@@ -1,16 +1,11 @@
 n = int(input())
+d = [5001] * (n + 5)
+d[3] = d[5] = 1
 
-count = 0
-while True:
-    if n % 5 == 0:
-        count += n // 5
-        break
-    else:
-        n -= 3
-        count += 1
-        
-        if n <= 2 and n != 0:
-            count = -1
-            break
+for i in range(6, n + 1):
+    d[i] = min(d[i - 5] + 1, d[i - 3] + 1)
 
-print(count)
+if d[n] > 5000:
+    print(-1)
+else:
+    print(d[n])

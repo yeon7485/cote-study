@@ -14,7 +14,7 @@ def solution(begin, target, words):
             return visited[words.index(target)]
         
         for i in range(len(words)):
-            if cnt(cur, words[i]) == 1:       
+            if cnt(cur, words[i]):       
                 queue.append(words[i])
                 if cur == begin:
                     visited[i] = 1
@@ -27,6 +27,6 @@ def cnt(a, b):
     for i in range(len(a)):
         if not a[i] == b[i]:
             count += 1
-    return count
+    return True if count == 1 else False
     
     

@@ -9,18 +9,18 @@ def solution(begin, target, words):
     queue.append(begin)
     
     while queue:
-        cur = queue.popleft()
-        if cur == target:
+        w = queue.popleft()
+        if w == target:
             return visited[words.index(target)]
         
         for i in range(len(words)):
-            if cnt(cur, words[i]):       
+            if cnt(w, words[i]):       
                 queue.append(words[i])
-                if cur == begin:
+                if w == begin:
                     visited[i] = 1
                 else:
-                    visited[i] = min(visited[i], visited[words.index(cur)] + 1)
-                
+                    visited[i] = min(visited[i], visited[words.index(w)] + 1)
+            
             
 def cnt(a, b):
     count = 0

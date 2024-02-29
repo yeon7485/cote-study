@@ -9,6 +9,7 @@ def dfs(count):
             if arr[j] > arr[j+1]:
                 return
         print(*arr, end='\n')
+        return
 
     for i in range(1, n + 1):
         if not visited[i]:

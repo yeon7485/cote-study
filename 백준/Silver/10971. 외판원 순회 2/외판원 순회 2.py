@@ -1,18 +1,29 @@
 n = int(input())
 graph = [list(map(int, input().split())) for _ in range(n)]
-visited = [0] * n
+visited = [False] * n
+route = []
 minCost = 1e10
 
-def dfs(next, cost):
-    global n, graph, visited, minCost
-    if cost < minCost:
-        if all(visited) and next==0:
-            minCost = min(minCost, cost)
-        for i in range(n):
-            if graph[next][i] > 0 and not visited[i]:
-                visited[i] += 1
-                dfs(i, cost + graph[next][i])
-                visited[i] -= 1
 
-dfs(0, 0)
+def dfs(count):
+    global minCost
+    if count == n:
+        cost = 0
+        for j in range(n-1):
+            cost += graph[route[j]][route[j + 1]]
+        if graph[route[n-1]][route[0]] != 0:
+            cost += graph[route[n-1]][route[0]]
+            minCost = min(cost, minCost)
+        return
+
+    for i in range(n):
+        if count == 0 or (not visited[i] and graph[route[-1]][i] != 0) :
+            route.append(i)
+            visited[i] = True
+            dfs(count + 1)
+            route.pop()
+            visited[i] = False
+
+
+dfs(0)
 print(minCost)

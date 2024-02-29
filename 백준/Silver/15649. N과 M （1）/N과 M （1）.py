@@ -6,6 +6,7 @@ arr = []
 def dfs(count):
     if count == m:
         print(*arr, end='\n')
+        return
 
     for i in range(1, n + 1):
         if not visited[i]:

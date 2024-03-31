@@ -8,8 +8,6 @@ for i in range(N):
 
 if N == 1:
     print(0)
-elif N == 2:
-    print(sum(heap))
 else:
     num = 0
     while len(heap) >= 2:

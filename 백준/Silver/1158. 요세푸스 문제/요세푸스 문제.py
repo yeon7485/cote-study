@@ -17,9 +17,8 @@ while len(result) < n:
     else:
         queue.append(num)
 
-ans = '<'
+ans = ''
 for r in result:
     ans += str(r) + ', '
 
-print(ans[:-2] + '>')
-
+print(f'<{ans[:-2]}>')

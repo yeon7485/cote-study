@@ -18,16 +18,16 @@ for _ in range(T):
                 heapq.heappush(min_heap, x)
                 heapq.heappush(max_heap, -x)
         elif op == 'D':
-            if min_heap and max_heap and nums:
+            if nums:
                 if x == 1:
-                    while -max_heap[0] not in nums or nums[-max_heap[0]] == 0:
-                        heapq.heappop(max_heap) * -1
+                    while -max_heap[0] not in nums:
+                        heapq.heappop(max_heap)
                     nums[-max_heap[0]] -= 1
                     if nums[-max_heap[0]] == 0:
                         del (nums[-max_heap[0]])
 
                 else:
-                    while min_heap[0] not in nums or nums[min_heap[0]] == 0:
+                    while min_heap[0] not in nums:
                         heapq.heappop(min_heap)
                     nums[min_heap[0]] -= 1
                     if nums[min_heap[0]] == 0:

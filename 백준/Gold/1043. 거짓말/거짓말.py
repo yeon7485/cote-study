@@ -2,7 +2,7 @@ from collections import deque
 
 N, M = map(int, input().split())
 KNOW = list(map(int, input().split()[1:]))
-know = [False] * (N + 1)
+isKnow = [False] * (N + 1)
 nums = [[] for _ in range(N+1)]
 party = []
 ans = 0
@@ -17,18 +17,18 @@ for _ in range(M):
 queue = deque()
 for k in KNOW:
     queue.append(k)
-    know[k] = True
+    isKnow[k] = True
     while queue:
         x = queue.popleft()
         for n in nums[x]:
-            if not know[n]:
+            if not isKnow[n]:
                 queue.append(n)
-                know[n] = True
+                isKnow[n] = True
 
 for i in range(M):
     go = True
     for p in party[i]:
-        if know[p]:
+        if isKnow[p]:
             go = False
             break
     if go:

@@ -4,15 +4,13 @@ T = int(input())
 for _ in range(T):
     p = input()
     n = int(input())
-    arr = []
     queue = deque()
     rev = 0
+    arr = input()[1:-1]
     if n > 0:
-        arr = list(map(int, input()[1:-1].split(',')))
+        arr = list(map(int, arr.split(',')))
         for a in arr:
             queue.append(a)
-    else:
-        no_used = input()
 
     for i in range(len(p)):
         if p[i] == 'R':

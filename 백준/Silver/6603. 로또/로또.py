@@ -1,8 +1,3 @@
-import sys
-
-sys.setrecursionlimit(1000000)
-
-
 def back(x, k, arr):
     global temp
     if x == 6:

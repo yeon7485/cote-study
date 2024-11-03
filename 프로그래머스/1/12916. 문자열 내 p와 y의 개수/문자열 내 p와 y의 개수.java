@@ -7,6 +7,6 @@ class Solution {
             else if(str.charAt(i) == 'y') count--;
         }
         
-        return count == 0 ? true : false;
+        return count == 0;
     }
 }

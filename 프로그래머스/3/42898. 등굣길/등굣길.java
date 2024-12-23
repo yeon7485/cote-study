@@ -1,4 +1,3 @@
-import java.util.Arrays;
 class Solution {
     public int solution(int m, int n, int[][] puddles) {
         int[][] dp = new int[n][m];

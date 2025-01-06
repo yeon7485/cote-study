@@ -19,6 +19,7 @@ class Solution {
             }
         }
         System.out.println(Arrays.toString(lost));
+        
         for(int i = 0; i < lost.length; i++) {
             for (int j = 0; j < reserve.length; j++) {
                 if(reserve[j] == lost[i] - 1 || reserve[j] == lost[i] + 1) {

@@ -13,7 +13,7 @@ class Solution {
         }
         
         // dp 배열 초기화
-        int[][] dp = new int[152][152];
+        int[][] dp = new int[max_alp + 2][max_cop + 2];
         for (int[] r : dp) {
             Arrays.fill(r, Integer.MAX_VALUE);
         }
